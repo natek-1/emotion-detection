@@ -9,3 +9,4 @@ transformers==4.31.0
 kaggle==1.5.16
 wandb==0.15.8
 tensorflow-model-optimization==0.7.5
+tensorflow-probability==0.21.0
