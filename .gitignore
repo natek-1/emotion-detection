@@ -160,3 +160,5 @@ cython_debug/
 #.idea/
 #
 research/kaggle.json
+research/.kaggle/*
+research/dataset/*
