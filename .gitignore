@@ -162,6 +162,8 @@ cython_debug/
 research/kaggle.json
 research/.kaggle/*
 research/dataset/*
+research/best_weights/
+research/tfrecords/
 
 .github/
 emotion_env/
