@@ -1,1 +1,1 @@
-# emotion-detection
+# emotion_detection

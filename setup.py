@@ -4,11 +4,11 @@ from typing import List
 with open("README.md", "r") as f:
     long_description = f.read()
 
-__version__ = '0.0.0'
+__version__ = '0.0.1'
 
-REPO_NAME = 'emotion-detection'
+REPO_NAME = 'emotion_detection'
 AUTHOR_NAME = 'natek-1'
-SRC_REPO = 'Emotion_Detection'
+SRC_REPO = 'emotiondetection'
 AUTHOR_EMAIL = 'nategabrielk@icloud.com'
 
 HYPEN_E_DOT = '-e .'
@@ -25,7 +25,7 @@ def get_requirements(file_path:str='./requirements.txt')->List[str]:
     return requirements
 
 setup(
-    name=SRC_REPO,
+    name='emotion_detection',
     version=__version__,
     author=AUTHOR_NAME,
     author_email=AUTHOR_EMAIL,
