@@ -6,9 +6,9 @@ with open("README.md", "r") as f:
 
 __version__ = '0.0.1'
 
-REPO_NAME = 'emotion_detection'
+REPO_NAME = 'emotion-detection'
 AUTHOR_NAME = 'natek-1'
-SRC_REPO = 'emotiondetection'
+SRC_REPO = 'emotionDetection'
 AUTHOR_EMAIL = 'nategabrielk@icloud.com'
 
 HYPEN_E_DOT = '-e .'
@@ -25,7 +25,7 @@ def get_requirements(file_path:str='./requirements.txt')->List[str]:
     return requirements
 
 setup(
-    name='emotion_detection',
+    name=SRC_REPO,
     version=__version__,
     author=AUTHOR_NAME,
     author_email=AUTHOR_EMAIL,
@@ -33,6 +33,6 @@ setup(
     long_description=long_description,
     long_description_content='text/markdown',
     url=f"https://github.com/{AUTHOR_NAME}/{REPO_NAME}",
-    packages=find_packages(),
+    package_dir={"": "src"},
     install_requires=get_requirements()
 )
