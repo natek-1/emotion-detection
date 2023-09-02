@@ -1,5 +1,6 @@
 import sys
-from emotion_detection.logging import logger
+from emotion_detection.logging.logger import log
+
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info()
     file_name=exc_tb.tb_frame.f_code.co_filename
@@ -16,7 +17,7 @@ class CustomException(Exception):
         self.error_message=error_message_detail(error_message,error_detail=error_detail)
     
     def __str__(self):
-        logger.info(self.error_message)
+        log.info(self.error_message)
         return self.error_message
     
 
